@@ -1,0 +1,200 @@
+
+/* Fonts style */
+
+
+
+
+
+
+/* // End Fonts style */
+
+
+
+
+
+/*	Resets
+	------	*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, 
+p, blockquote, pre, a, abbr, address, cite, code, del, dfn, em, 
+img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, hr, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figure, figcaption, hgroup, 
+menu, footer, header, nav, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+ul{ 
+    list-style: none;
+}
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+	display: block;
+}
+
+.clear:after{content:".";display:block;clear:both;visibility:hidden;line-height:0;height:0}
+a img{
+    border:0;
+}
+a,input,select,textarea{
+    outline:none;
+}
+input::-moz-focus-inner{
+    border:0; padding: 0;
+}
+
+img{
+    float: left;
+}
+
+/* Selection colours (easy to forget) */
+
+img::selection 		{background: transparent;}
+img::-moz-selection	{background: transparent;}
+a{text-decoration: none; display: inline-block;}
+/*a:hover{text-decoration: underline; -webkit-transition: all .2s ease-in-out; -moz-transition: all .2s ease-in-out; transition: all .2s ease-in-out;}*/
+
+
+
+/*		Default Layout 
+-------------------------------------------------------------------------------
+*/
+
+body {background: #000; color: rgb(60,60,60); -webkit-text-size-adjust: 100%; -moz-text-size-adjust:100%; -moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased; overflow-x: hidden; overflow-y:auto;}
+
+*{-webkit-box-sizing: border-box;-moz-box-sizing:border-box; box-sizing: border-box;}
+
+
+body,html,.main-wrap{height: 100%; min-height: 100%;}
+.main-content{min-height: 100%;}
+
+section, header, footer, main-wrap{float: left;width: 100%;}
+
+
+.header-area { float: left; width: 100%; background: #031735;position: absolute; top: 0;left: 0; z-index: 999; }
+.with-logo-bg { float: left; width: 100%; position: relative; top: 40px; min-height: 137px; }
+.logo-wrap { position: absolute; top: 0; left: 50%; max-width: 594px; margin-left: -297px; margin-top: -37px; width: 100%;}
+.logo-wrap a img { width: 100%; }
+
+.main-content{background: #000;float: left;width: 100%;padding-top: 177px;}
+.video-inner{max-width: 850px;margin: 0 auto;padding: 62px 25px 0px;}
+
+.socail-icon { width: 175px; margin: 0 auto;padding: 48px 0; } 
+.socail-icon figure { width: 42px; height: 43px; float: left; margin-left: 24px; } 
+.socail-icon figure:first-child { margin-left: 0px; }
+.socail-icon figure img{width: 100%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =======================================================================================================
+============================================ Responsive style ========================================== */
+
+/*		Mobile Layout: 320px and 480px and more but less than or equal to 767px.
+----------------------------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+    input[type="text"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    
+    .with-logo-bg {top: 10px; height: 48px; min-height: 10px;}
+    .logo-wrap{position: relative; left: auto; margin: -10px auto 0; padding: 0 15px; max-width: 215px; }
+    .main-content{padding-top: 58px; position: absolute; left: 0; top: 50%; -webkit-transform: translateY(-50%); -moz-transform: translateY(-50%); transform: translateY(-50%); height: auto; min-height: 10px;}
+    .socail-icon {padding: 20px 0 30px; }
+    .video-inner{padding-top: 30px;}
+    
+    
+
+}
+
+
+
+/*		Wide Mobile Layout: 480px.
+------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .main-content{position: relative; left: auto; top: auto; -webkit-transform: translateY(0%); -moz-transform: translateY(0%); transform: translateY(0%); min-height: 100%;}
+    
+    
+    
+}
+
+
+
+/*		Tablet Layout: 768px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    input[type="text"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    
+    .with-logo-bg{min-height: 115px;}
+    .logo-wrap{max-width: 500px; margin-left: -250px;}
+    
+    
+    
+}
+
+
+/*		Tablet Layout: 1024px.
+-----------------------------------------------------------------
+*/
+
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+    input[type="text"],input[type="submit"],input[type="password"],select,textarea{-webkit-appearance:none;-moz-appearance:none;appearance:none; border-radius: 0}
+    
+    .with-logo-bg{min-height: 115px;}
+    .logo-wrap{max-width: 520px; margin-left: -260px;}
+    .main-content{padding-top: 155px;}
+    .video-inner{padding: 30px 25px 0;}
+    .socail-icon{padding-bottom: 30px;}
+	
+}
+
+
+
+
+/*	Retina media query.
+	Overrides styles for devices with a 
+	device-pixel-ratio of 2+, such as iPhone 4.
+-----------------------------------------------    */
+
+@media 
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (min-device-pixel-ratio: 2) {
+	
+	
+}
+
+
+
+
+
+
+
